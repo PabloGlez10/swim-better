@@ -7,8 +7,8 @@ const bearerToken = require('express-bearer-token')
 const cors = require('cors')
 
 const usersController = require('./backend/controllers/usersController')
-// const authController = require()
-// const indexController = require()
+const authController = require('./backend/controllers/authController')
+const indexController = require()
 // const levelsController = require()
 // const exercisesController = require()
 
@@ -17,16 +17,16 @@ const app = express()
 app.use(bearerToken())
 app.use(cors())
 
-nunjucks.configure('', {
+nunjucks.configure('views', {
   autoescape: true,
   express: app
 })
 
 app.use(express.json())
 
-// app.use(usersController)
-// app.use(authController)
-// app.use(indexController)
+app.use(usersController)
+app.use(authController)
+app.use(indexController)
 // app.use(levelsController)
 // app.use(exercisesController)
 
