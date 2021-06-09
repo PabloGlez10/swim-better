@@ -5,6 +5,11 @@
   "repository": "https://github.com/PabloGlez10/swim-better.git",
   "author": "Pablo <pggambero@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha --reporter spec",
+    "dev": "nodemon index -e js,tpl"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

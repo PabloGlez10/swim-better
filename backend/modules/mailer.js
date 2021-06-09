@@ -54,6 +54,6 @@ class Mailer {
   }
 }
 
-let Mailer = new Mailer()
+let mailer = new Mailer()
 
 module.exports = new Mailer()

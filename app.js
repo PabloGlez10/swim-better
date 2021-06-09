@@ -2,15 +2,15 @@
 
 const express = require('express')
 const nunjucks = require('nunjucks')
-const database = require('./modules/database')
+const database = require('./backend/modules/database')
 const bearerToken = require('express-bearer-token')
 const cors = require('cors')
 
-const usersController = require()
-const authController = require()
-const indexController = require()
-const levelsController = require()
-const exercisesController = require()
+const usersController = require('./backend/controllers/usersController')
+// const authController = require()
+// const indexController = require()
+// const levelsController = require()
+// const exercisesController = require()
 
 const app = express()
 

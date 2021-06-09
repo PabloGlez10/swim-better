@@ -1,6 +1,6 @@
 'use strict'
 
-const config = require('./modules/config')
+const config = require('./backend/modules/config')
 const app = require('./app')
 const PORT = config.PORT || 8080
 
