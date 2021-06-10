@@ -4,6 +4,6 @@ const mongoose = require('mongoose')
 
 const levelSchema = require('./schemas/levelSchema')
 
-const levelModel = require('levels', levelSchema)
+const levelModel = mongoose.model('levels', levelSchema)
 
 module.exports = levelModel

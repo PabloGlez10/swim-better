@@ -10,7 +10,7 @@ const usersController = require('./backend/controllers/usersController')
 const authController = require('./backend/controllers/authController')
 const indexController = require('./backend/controllers/indexController')
 const levelsController = require('./backend/controllers/levelsController')
-// const exercisesController = require()
+const exercisesController = require('./backend/controllers/exerciseController')
 
 const app = express()
 
@@ -28,7 +28,7 @@ app.use(usersController)
 app.use(authController)
 app.use(indexController)
 app.use(levelsController)
-// app.use(exercisesController)
+app.use(exercisesController)
 
 database.connect()
 

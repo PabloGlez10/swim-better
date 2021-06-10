@@ -68,7 +68,7 @@ router.route('/exercises/:exerciseSlug')
   })
 
 router.route('/exercises/:exerciseId')
-  .pus(onlyAdminAccess, async (req, res) => {
+  .put(onlyAdminAccess, async (req, res) => {
     try{
       const exerciseId = requ.params.exerciseId
       const exerciseData = req.body

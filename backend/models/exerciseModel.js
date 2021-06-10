@@ -4,6 +4,6 @@ const mongoose = require('mongoose')
 
 const exerciseSchema = require('./schemas/exerciseSchema')
 
-const exerciseModel = require('exercises', exerciseSchema)
+const exerciseModel = mongoose.model('exercises', exerciseSchema)
 
 module.exports = exerciseModel
