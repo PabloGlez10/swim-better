@@ -37,7 +37,7 @@ router.route('/levels')
   })
 
   router.route('/levels/:levelId')
-    .get(onlyAdminAccess, async (req, res) => {
+    .get(publicAccess, async (req, res) => {
       try {
         const levelId = req.params.levelId
 
